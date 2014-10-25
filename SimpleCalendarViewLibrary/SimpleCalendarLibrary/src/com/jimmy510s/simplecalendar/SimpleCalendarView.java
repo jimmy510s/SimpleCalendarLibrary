@@ -65,6 +65,9 @@ public class SimpleCalendarView extends FrameLayout implements OnClickListener
         public void onPreviousMonthClicked();
     }
 
+	/**
+	 * Method that will be called to initialize the calendar's views (textViews, buttons etc).
+	 */
 	private void initialize()
 	{
 		if(isInEditMode())
@@ -125,6 +128,9 @@ public class SimpleCalendarView extends FrameLayout implements OnClickListener
 		}
 	}
 	
+	/**
+	 * Moves the calendar view to the next month and calls the writeTitle method to update the title
+	 */
 	private void incrementMonth()
 	{
 		SimpleCalendarClickListener l_listener = getClickListener();
@@ -140,6 +146,9 @@ public class SimpleCalendarView extends FrameLayout implements OnClickListener
 		m_gridView.setAdapter(m_adapter);
 	}
 	
+	/**
+	 * Moves the calendar view to the previous month and calls the writeTitle method to update the title
+	 */
 	private void decrementMonth()
 	{
 		SimpleCalendarClickListener l_listener = getClickListener();
@@ -155,6 +164,9 @@ public class SimpleCalendarView extends FrameLayout implements OnClickListener
 		m_gridView.setAdapter(m_adapter);
 	}
 	
+	/**
+	 * Updates the title that is between the next and previous month buttons of the calendar view.
+	 */
 	private void writeTitle()
 	{
 		m_title.setText(CalendarUtils.getCalendarControlsTitle(m_calendar));
@@ -170,6 +182,11 @@ public class SimpleCalendarView extends FrameLayout implements OnClickListener
 		this.m_clickListener = m_clickListener;
 	}
 	
+	/**
+	 * Method that gets a calendar object and moves the calendar view that that object's month.
+	 * 
+	 * @param a_calendar Given calendar object that is set to a desired month to move
+	 */
 	public void moveToMonth(Calendar a_calendar)
 	{
 		if(a_calendar != null)
@@ -183,6 +200,9 @@ public class SimpleCalendarView extends FrameLayout implements OnClickListener
 		}
 	}
 	
+	/**
+	 * Resets the calendar to the init month that called in the setData method.
+	 */
 	public void resetCalendar()
 	{
 		m_calendar.setTimeInMillis(m_initialMonth.getTimeInMillis());

@@ -132,6 +132,9 @@ public class SimpleCallendarAdapter extends BaseAdapter implements OnClickListen
 		return a_convertView;
 	}
 
+	/*
+	 * This method is responsible for drawing the weekend buttons.
+	 */
 	private void drawWeekends(SimpleCalendarButton a_btn, Calendar a_calendar,boolean a_isOutOfMonth)
 	{
 		Calendar l_tempCal = Calendar.getInstance();
