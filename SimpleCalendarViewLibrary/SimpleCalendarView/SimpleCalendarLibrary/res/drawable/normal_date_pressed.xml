@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/COLOR_WHITE" />
+
+            <stroke android:color="@color/COLOR_BLACK" />
+
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+
+    <!-- left shadow -->
+    <item>
+        <shape android:shape="rectangle" >
+            <gradient
+                android:angle="180"
+                android:centerColor="@color/COLOR_TRANSPARENT"
+                android:centerX="0.9"
+                android:endColor="@color/COLOR_SHADOW"
+                android:startColor="@color/COLOR_TRANSPARENT" />
+
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+
+    <!-- top shadow -->
+    <item>
+        <shape android:shape="rectangle" >
+            <gradient
+                android:angle="-90"
+                android:centerColor="@color/COLOR_TRANSPARENT"
+                android:centerX="0.9"
+                android:endColor="@color/COLOR_SHADOW"
+                android:startColor="@color/COLOR_TRANSPARENT" />
+
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+
+    <!-- bottom shadow -->
+    <item>
+        <shape android:shape="rectangle" >
+            <gradient
+                android:angle="90"
+                android:centerColor="@color/COLOR_TRANSPARENT"
+                android:centerY="0.9"
+                android:endColor="@color/COLOR_SHADOW"
+                android:startColor="@color/COLOR_TRANSPARENT" />
+
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+
+</layer-list>

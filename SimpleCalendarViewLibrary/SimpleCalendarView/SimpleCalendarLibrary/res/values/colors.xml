@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="COLOR_TRANSPARENT">#00FFFFFF</color>
+    <color name="COLOR_LISTS_LIGHT_BACKGROUND">#F4F2F0</color>
+    <color name="COLOR_WHITE">#FFFFFF</color>
+    <color name="COLOR_BLACK">#000000</color>
+    <color name="COLOR_SHADOW">#99000000</color>
+    <color name="COLOR_DARK_GRAY">#EEEEEE</color>
+
+</resources>

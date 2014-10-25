@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">Calendar Example</string>
+    <string name="str_Mon">Mon</string>
+    <string name="str_Tue">Tue</string>
+    <string name="str_Wed">Wed</string>
+    <string name="str_Thu">Thu</string>
+    <string name="str_Fri">Fri</string>
+    <string name="str_Sat">Sat</string>
+    <string name="str_Sun">Sun</string>
+    <string name="str_year">Year:</string>
+
+</resources>
